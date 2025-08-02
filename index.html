@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
+    <!-- title icon -->
+    <link rel="icon" type="image/x-icon" href="images/title.png" />
+
+    <!-- Meta tags -->
+    <meta
+      name="description"
+      content="Solve your project management problems with our powerful tools designed for maximum productivity."
+    />
+    <meta
+      name="keywords"
+      content="task management, productivity, project management, workflow"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#5F00FF",
+              dark: "#050020",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="antialiased">
+    <!-- Main Content -->
+    <main
+      class="bg-[url('images/b-g.png')] bg-cover bg-no-repeat bg-center bg-fixed min-h-screen"
+    >
+      <div class="pt-4 px-4">
+        <!-- Header -->
+        <header
+          class="mx-auto px-4 sm:px-6 py-4 flex justify-between items-center bg-black/50 rounded-xl max-w-6xl backdrop-blur-sm border border-white/10 transition-smooth"
+        >
+          <!-- Logo -->
+          <div>
+            <a
+              href="#"
+              class="text-2xl font-bold text-white hover:text-primary transition-smooth"
+              >SOLVE</a
+            >
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav aria-label="Main Navigation" class="hidden md:block">
+            <ul class="flex gap-8">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-gray-300 hover:text-white font-medium transition-smooth"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="text-sm text-gray-300 hover:text-white font-medium transition-smooth"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#achievements"
+                  class="text-sm text-gray-300 hover:text-white font-medium transition-smooth"
+                  >Achievements</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-sm text-gray-300 hover:text-white font-medium transition-smooth"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- CTA Buttons -->
+          <div class="hidden md:flex gap-4 items-center">
+            <button
+              class="text-sm text-gray-300 hover:text-white font-medium transition-smooth"
+            >
+              Sign Up
+            </button>
+            <button
+              class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-smooth"
+            >
+              Log In
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobileMenuButton"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section
+          class="container mx-auto px-4 sm:px-6 py-16 max-w-6xl text-center"
+        >
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in"
+          >
+            Welcome to <span class="text-primary">Solve</span>
+          </h1>
+          <p
+            class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 font-medium"
+          >
+            Manage Your Tasks <span class="text-blue-300">Efficiently</span>
+          </p>
+          <p
+            class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+          >
+            Solve your project management problems with our powerful tools
+            designed for
+            <span class="text-white font-medium">maximum productivity</span>.
+          </p>
+          <div class="mt-8 flex justify-center gap-4">
+            <button
+              class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium transition-smooth"
+            >
+              Get Started
+            </button>
+            <button
+              class="border border-white/20 hover:border-primary text-white px-6 py-3 rounded-lg font-medium transition-smooth"
+            >
+              Learn More
+            </button>
+          </div>
+        </section>
+
+        <!-- Achievement Cards -->
+        <section
+          id="achievements"
+          class="flex justify-center items-center flex-wrap gap-6 sm:gap-8 px-4 pb-16"
+        >
+          <!-- Card 1 -->
+          <div
+            class="gradient-card w-full sm:max-w-xs rounded-xl p-6 shadow-lg border border-white/20 hover:border-blue-400/40 transition-all duration-300 text-center"
+          >
+            <div class="text-4xl text-yellow-400 mb-3">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="text-white font-semibold text-lg mb-2">
+              Best Interaction
+            </h3>
+            <p class="text-gray-300 text-sm mb-4">Achievement Award 2023</p>
+            <a
+              href="#"
+              class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-xs font-medium transition-smooth"
+            >
+              View Details
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="gradient-card w-full sm:max-w-xs rounded-xl p-6 shadow-lg border border-white/20 hover:border-purple-400/40 transition-all duration-300 text-center"
+          >
+            <div class="text-4xl text-purple-400 mb-3">
+              <i class="fas fa-chart-simple"></i>
+            </div>
+            <h3 class="text-white font-semibold text-lg mb-2">
+              Unicorn Status
+            </h3>
+            <p class="text-gray-300 text-sm mb-4">Valued at $1B+</p>
+            <a
+              href="#"
+              class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-xs font-medium transition-smooth"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="gradient-card w-full sm:max-w-xs rounded-xl p-6 shadow-lg border border-white/20 hover:border-green-400/40 transition-all duration-300 text-center"
+          >
+            <div class="text-4xl text-green-400 mb-3">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="text-white font-semibold text-lg mb-2">
+              Trusted Community
+            </h3>
+            <p class="text-gray-300 text-sm mb-4">1M+ Active Users</p>
+            <a
+              href="#"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-xs font-medium transition-smooth"
+            >
+              Join Now
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="mt-12 sm:mt-20 px-4 sm:px-6 flex flex-col max-w-6xl mx-auto"
+    >
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12">
+        Who we are?
+      </h2>
+
+      <div
+        class="flex flex-col md:flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-16 w-full"
+      >
+        <!-- Chart -->
+        <div
+          class="flex items-end gap-4 sm:gap-8 w-full max-w-md px-4 border-l border-t border-white/20 h-[250px] sm:h-[300px]"
+        >
+          <!-- Bar 1 -->
+          <div
+            class="flex flex-col items-center w-[60px] sm:w-[80px] h-full justify-end group"
+          >
+            <div
+              class="bg-purple-400 w-full rounded-t-lg transition-all duration-500"
+              style="height: 60%"
+            ></div>
+            <span class="mt-2 text-xs sm:text-sm text-gray-300">Usability</span>
+            <span
+              class="text-xs text-purple-300 mt-1 opacity-0 group-hover:opacity-100 transition"
+              >60%</span
+            >
+          </div>
+
+          <!-- Bar 2 -->
+          <div
+            class="flex flex-col items-center w-[60px] sm:w-[80px] h-full justify-end group"
+          >
+            <div
+              class="bg-purple-500 w-full rounded-t-lg transition-all duration-500"
+              style="height: 30%"
+            ></div>
+            <span class="mt-2 text-xs sm:text-sm text-gray-300">UI/UX</span>
+            <span
+              class="text-xs text-purple-300 mt-1 opacity-0 group-hover:opacity-100 transition"
+              >30%</span
+            >
+          </div>
+
+          <!-- Bar 3 -->
+          <div
+            class="flex flex-col items-center w-[60px] sm:w-[80px] h-full justify-end group"
+          >
+            <div
+              class="bg-purple-600 w-full rounded-t-lg transition-all duration-500"
+              style="height: 10%"
+            ></div>
+            <span class="mt-2 text-xs sm:text-sm text-gray-300">Marketing</span>
+            <span
+              class="text-xs text-purple-300 mt-1 opacity-0 group-hover:opacity-100 transition"
+              >10%</span
+            >
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="max-w-sm w-full space-y-4 sm:space-y-6">
+          <!-- Experience -->
+          <div class="flex items-center gap-4">
+            <p class="text-3xl sm:text-4xl font-bold text-purple-200">10</p>
+            <p class="text-base sm:text-lg text-gray-300">Years Experience</p>
+          </div>
+
+          <!-- User Stats -->
+          <div
+            class="flex flex-col sm:flex-row sm:gap-8 gap-4 items-start sm:items-center"
+          >
+            <div class="flex items-center gap-4">
+              <p class="text-2xl sm:text-3xl font-bold text-purple-200">1M+</p>
+              <p class="text-base sm:text-lg text-gray-300">Active Users</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <p class="text-2xl sm:text-3xl font-bold text-purple-200">95%</p>
+              <p class="text-base sm:text-lg text-gray-300">Satisfaction</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Simplify your workflow with our intuitive task management tool,
+            designed to help you stay on top of your daily responsibilities and
+            long-term goals.
+          </p>
+
+          <p class="text-blue-300 font-semibold italic text-sm sm:text-base">
+            Streamline Your Workflow, Achieve More.
+          </p>
+
+          <!-- CTA Button -->
+          <button
+            class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-smooth text-sm sm:text-base"
+          >
+            Discover More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section
+      id="features"
+      class="mt-12 sm:mt-20 px-4 sm:px-6 flex flex-col max-w-6xl mx-auto pb-12 sm:pb-20"
+    >
+      <h2
+        class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 max-w-xs sm:max-w-md"
+      >
+        Built for endless uses,<br />
+        Across all teams.
+      </h2>
+
+      <div
+        class="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8"
+      >
+        <!-- Left: Figma Design -->
+        <div
+          class="w-full max-w-[320px] sm:max-w-[400px] h-[300px] sm:h-[380px] rounded-[14px] sm:rounded-[18px] bg-white/10 flex items-center justify-center"
+        >
+          <div
+            class="relative w-full max-w-[280px] sm:max-w-[360px] h-[270px] sm:h-[340px] rounded-[12px] sm:rounded-[16px] bg-white flex items-center justify-center"
+          >
+            <!-- Colored Circles -->
+            <div
+              class="absolute top-3 sm:top-4 left-6 sm:left-8 flex items-center space-x-2"
+            >
+              <div
+                class="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-[#FF5656]"
+              ></div>
+              <div
+                class="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-[#FFAF36]"
+              ></div>
+              <div
+                class="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-[#63C7FF]"
+              ></div>
+            </div>
+
+            <!-- Purple Box -->
+            <div
+              class="w-[240px] sm:w-[300px] h-[220px] sm:h-[260px] rounded-[16px] sm:rounded-[20px] bg-[#CDAFFF] shadow-md relative flex items-center justify-center"
+            >
+              <!-- Star Icon -->
+              <div
+                class="absolute top-2 sm:top-3 right-2 sm:right-3 w-6 sm:w-7 h-6 sm:h-7 bg-white rounded-lg flex items-center justify-center shadow"
+              >
+                <i class="fas fa-star text-yellow-400 text-xs sm:text-sm"></i>
+              </div>
+
+              <!-- Figma Icon -->
+              <div
+                class="w-12 sm:w-14 h-12 sm:h-14 rounded-[16px] sm:rounded-[20px] bg-white flex items-center justify-center"
+              >
+                <img
+                  src="images/figma.png"
+                  alt="Figma icon"
+                  class="w-9 sm:w-11 h-9 sm:h-11"
+                />
+              </div>
+            </div>
+
+            <!-- Followers -->
+            <div
+              class="absolute bottom-1 left-4 sm:left-8 flex items-center space-x-2"
+            >
+              <div class="flex -space-x-1 sm:-space-x-2">
+                <img
+                  src="images/user.png"
+                  class="w-5 sm:w-7 h-5 sm:h-7 rounded-full border-2 border-white"
+                  alt="User"
+                />
+                <img
+                  src="images/user.png"
+                  class="w-5 sm:w-7 h-5 sm:h-7 rounded-full border-2 border-white"
+                  alt="User"
+                />
+                <img
+                  src="images/user.png"
+                  class="w-5 sm:w-7 h-5 sm:h-7 rounded-full border-2 border-white"
+                  alt="User"
+                />
+              </div>
+              <span class="text-xs sm:text-sm font-medium text-gray-600"
+                >1.2k Followers</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Buttons and Text -->
+        <div
+          class="max-w-xl w-full px-4 py-6 sm:py-8 space-y-4 sm:space-y-6 bg-white/10 rounded-lg"
+        >
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-3 sm:gap-4">
+            <button
+              class="border border-purple-500 text-purple-500 font-medium px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-smooth hover:bg-purple-500 hover:text-white text-sm sm:text-base"
+            >
+              Company Benefit
+            </button>
+            <button
+              class="border border-blue-500 text-blue-500 font-medium px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-smooth hover:bg-blue-500 hover:text-white text-sm sm:text-base"
+            >
+              Team Management
+            </button>
+            <button
+              class="border border-blue-500 text-blue-500 font-medium px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-smooth hover:bg-blue-500 hover:text-white text-sm sm:text-base"
+            >
+              Road Map
+            </button>
+          </div>
+
+          <!-- Text -->
+          <div class="space-y-2 sm:space-y-3">
+            <p class="text-base sm:text-lg font-semibold">
+              Company main platform
+            </p>
+            <p class="text-white/75 text-sm sm:text-base">
+              Simplify your workflow with our intuitive task management tool,
+              designed to help you stay on top of your daily responsibilities
+              and long-term goals.
+            </p>
+            <p class="text-white/75 text-sm sm:text-base">
+              Our platform grows with your business, offering scalable solutions
+              that adapt to your changing needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section
+      class="mt-12 sm:mt-20 px-4 sm:px-6 flex flex-col max-w-6xl mx-auto pb-12 sm:pb-20"
+    >
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12">
+        What our customers say
+      </h2>
+
+      <div class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+        <!-- Left: Image -->
+        <div
+          class="w-full lg:w-1/2 h-[280px] sm:h-[380px] rounded-[14px] sm:rounded-[18px] overflow-hidden"
+        >
+          <img
+            src="images/dp.png"
+            alt="Team working together"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Right: Testimonial -->
+        <div class="w-full lg:w-1/2">
+          <div
+            class="bg-black bg-opacity-70 p-6 sm:p-8 rounded-[14px] sm:rounded-[18px]"
+          >
+            <p class="text-3xl sm:text-4xl mb-2">"</p>
+            <p class="mb-4 sm:mb-6 text-base sm:text-lg">
+              Using this tool has completely transformed how our team operates.
+              We're more organized, meet our deadlines consistently, and
+              collaboration has never been smoother. It's a game-changer!
+            </p>
+
+            <div class="flex justify-between items-center gap-4">
+              <div>
+                <span class="font-bold text-sm sm:text-base">Ketul Adani</span>
+                <p class="text-xs sm:text-sm opacity-80">CEO of XYZ Company</p>
+              </div>
+
+              <!-- Circular Arrow -->
+              <div class="my-6 flex items-center gap-4">
+                <div
+                  class="group relative rounded-full border-2 border-white p-2 sm:p-3"
+                >
+                  <!-- Circle -->
+                  <div class="h-3 sm:h-4 w-3 sm:w-4"></div>
+
+                  <!-- Arrow starting from center and extending out -->
+                  <div
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <div class="relative">
+                      <!-- Arrow line -->
+                      <div class="absolute h-[2px] w-8 sm:w-10 bg-white"></div>
+                      <!-- Arrow head -->
+                      <div
+                        class="absolute left-[24px] sm:left-[30px] top-1/2 h-[8px] w-[8px] sm:h-[10px] sm:w-[10px] -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-white"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section
+      class="max-w-md mx-auto text-center space-y-3 sm:space-y-4 p-4 sm:p-6 mb-12 sm:mb-20"
+    >
+      <p class="text-lg sm:text-xl font-medium">
+        So, what are you waiting for?
+      </p>
+      <p class="text-white/75 text-sm sm:text-base">
+        Stay Updated with the Latest News, Tips, and Updates!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-2">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="flex-1 px-4 py-2 rounded-md border border-gray-300 bg-transparent text-white placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm sm:text-base"
+        />
+        <button
+          class="px-4 sm:px-6 py-2 bg-primary text-white hover:bg-primary/80 rounded-md transition-smooth text-sm sm:text-base"
+        >
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 sm:p-8 bg-black/50">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8"
+      >
+        <!-- Brand Section -->
+        <div class="space-y-3 sm:space-y-4">
+          <p class="text-xl sm:text-2xl font-bold text-primary">SOLVE</p>
+          <p class="text-gray-300 text-sm sm:text-base">
+            Work together seamlessly with real-time updates and communication.
+          </p>
+          <p class="text-gray-400 text-xs sm:text-sm">
+            Team Conditional & Policy
+          </p>
+        </div>
+
+        <!-- Pages Links -->
+        <div class="space-y-3 sm:space-y-4">
+          <p class="font-semibold text-base sm:text-lg">Pages</p>
+          <ul class="space-y-1 sm:space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#achievements"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Achievements</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="space-y-3 sm:space-y-4">
+          <p class="font-semibold text-base sm:text-lg">Company</p>
+          <ul class="space-y-1 sm:space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Customer</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Enterprise</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Partners</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-primary transition-smooth text-sm sm:text-base"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Auth Buttons -->
+        <div class="space-y-3 sm:space-y-4">
+          <button
+            class="w-full bg-primary hover:bg-primary/90 text-white py-2 px-4 rounded-md transition-smooth text-sm sm:text-base"
+          >
+            Sign Up
+          </button>
+          <button
+            class="w-full border border-primary text-primary hover:bg-primary/10 py-2 px-4 rounded-md transition-smooth text-sm sm:text-base"
+          >
+            Log In
+          </button>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 sm:mt-12 text-center text-gray-400 text-xs sm:text-sm">
+        <p>&copy; 2023 SOLVE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="mobile-menu fixed inset-0 bg-black/90 z-50 p-6 overflow-y-auto"
+    >
+      <div class="flex justify-end mb-8">
+        <button id="closeMenuButton" class="text-white focus:outline-none">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col items-center space-y-8">
+        <a
+          href="#"
+          class="text-xl text-white hover:text-primary transition-smooth"
+          >Home</a
+        >
+        <a
+          href="#features"
+          class="text-xl text-white hover:text-primary transition-smooth"
+          >Features</a
+        >
+        <a
+          href="#achievements"
+          class="text-xl text-white hover:text-primary transition-smooth"
+          >Achievements</a
+        >
+        <a
+          href="#about"
+          class="text-xl text-white hover:text-primary transition-smooth"
+          >About</a
+        >
+
+        <div class="flex gap-4 mt-8">
+          <button class="text-white border border-white px-6 py-2 rounded-lg">
+            Sign Up
+          </button>
+          <button class="bg-primary text-white px-6 py-2 rounded-lg">
+            Log In
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
